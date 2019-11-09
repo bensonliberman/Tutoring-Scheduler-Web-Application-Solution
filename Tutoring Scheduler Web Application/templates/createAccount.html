@@ -1,0 +1,45 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+<div class="p-3 mb-2 bg-warning text-dark text-center">
+    <h1>Create an Account!</h1>
+</div>
+<div class="container mx-auto mw-50 mh-50">
+    <div class="card ">
+        <div class="p-3 mb-2 bg-transparent text-dark text-centered"></div>
+
+        <div class="card-body px-auto">
+
+
+            <form>
+
+                <div class="form-group">
+                    <lael for="inputID">Enter TU id:</lael>
+                    <input type="text" class="form-control" id="inputID" placeholder="TU id">
+
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Enter Password:</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="inputName">Enter Name (first and last):</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Enter Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+    {% endblock %}
