@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TUtoring Tigers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- This is the navigation bar at the top of the page-->
+    {% include 'navBar.html' %}
+
+    <div class="pb-5 bg-transparent"></div>
+
+
+    <div class="mx-auto " style="width: 1100px">
+        <div class="starter-template  text-center">
+            <p class="h1">My Availability</p>
+
+        </div>
+    </div>
+    <div class="pb-5 bg-transparent"></div>
+    <div class="container row w-40 mx-auto p-3">
+        <div class="container   col h-100">
+            <div class="accordion " id="accordionExample" style=" width:500px ">
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-warning" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Monday
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            9am-5pm
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed text-warning" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Thursday
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            6pm-9pm
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <div class="container col">
+            <div class="container h-100 ">
+                <!--Need to add functionality to buttons-->
+                <ul class="list-group bg-warning">
+                    <li class="list-group-item">02/14/1994  </li>
+                    <li class="list-group-item">12/9/2019 </li>
+                    <li class="list-group-item">11/26/2019</li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container mx-auto ">
+        <div><a class="btn btn-warning tex-center p-3 col" href="/EditDaily" role="button">Edit Daily Availability</a></div>
+        <div><a class="btn btn-dark text-center p-3 col" href="/EditBlackoutDates" role="button">Edit Blackout Dates</a></div>
+
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

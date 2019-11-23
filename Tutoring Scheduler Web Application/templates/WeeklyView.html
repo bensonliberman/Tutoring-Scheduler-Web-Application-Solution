@@ -1,15 +1,9 @@
-﻿<!-- HomepageLayout contains the layout for each of the three user types: Student, Tutor, Admin-->
-{% extends 'overallLayout.html' %}
+﻿{% extends 'overallLayout.html' %}
 
 {% block body %}
 
 <!-- This is the navigation bar at the top of the page-->
 {% include 'navBar.html' %}
-
-
-{% if pageType == 'admin' %} <!-- This is specifically admin homepage-->
-{% include 'adminHomepage.html' %}
-{% endif %}
 
 <div class="pb-5 bg-transparent"></div>
 
@@ -23,6 +17,20 @@
 
     </div>
 </div>
+
+
+<div class="pb-5 bg-transparent"></div>
+
+<!--Calendar View Toggle-->
+<div class="container-fluid text-center text-bold bg-warning p-4">
+    <a class="btn btn-dark" href="/" role="button">Monthly View</a>
+    <a class="btn btn-dark" href="/WeeklyView" role="button">Weekly View</a>
+</div>
+
+<!-- weeklyView on Homepage-->
+    {% include 'calendarViews/weeklyCalendarView.html' %}
+
+
 {% endif %}
 
 {% endblock %}

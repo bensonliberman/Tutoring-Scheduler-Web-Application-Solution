@@ -35,17 +35,33 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="templates\adminHomepage.html" />
+    <Content Include="templates\adminMmgt.html" />
+    <Content Include="templates\blackoutAvail.html" />
     <Content Include="templates\calendar.html" />
-    <Content Include="templates\calendar\calendarFormat.html" />
+    <Content Include="templates\calendarViews\monthlyCalendarView.html" />
+    <Content Include="templates\calendarViews\weeklyCalendarView.html" />
+    <Content Include="templates\calendarViews\weeklyViewCalendarRows.html" />
     <Content Include="templates\createAccount.html" />
+    <Content Include="templates\dailyAvail.html" />
     <Content Include="templates\homepageLayout.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\manageFacil.html" />
     <Content Include="templates\myProfile.html" />
     <Content Include="templates\navBar.html" />
     <Content Include="templates\overallLayout.html" />
+    <Content Include="templates\schedAppt.html" />
+    <Content Include="templates\systemInfo.html" />
+    <Content Include="templates\tutAppDetail.html" />
+    <Content Include="templates\tutAssignment.html" />
+    <Content Include="templates\tutAvailability.html" />
+    <Content Include="templates\tutMmgt.html" />
+    <Content Include="templates\tutorSelect.html" />
     <Content Include="templates\updatePassword.html" />
     <Content Include="templates\becomeATutor.html" />
     <Content Include="templates\viewTutApps.html" />
+    <Content Include="templates\weeklyCalendar.html" />
+    <Content Include="templates\weeklyView.html" />
+    <Content Include="templates\workRecord.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
@@ -60,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="templates\" />
-    <Folder Include="templates\calendar\" />
+    <Folder Include="templates\calendarViews\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

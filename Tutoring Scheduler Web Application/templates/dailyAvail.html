@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TUtoring Tigers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    {% include 'navBar.html' %}
+
+    <div class="mx-auto" style="width: 1100px">
+        <div class="starter-template  text-center">
+            <p class="h1">Edit Daily Availability</p>
+
+        </div>
+    </div>
+    <div class="container-fluid mx-auto w-50 m-4">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header bg-dark" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-warning" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Friday
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        5pm-8pm
+                        <span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">Delete</a> </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-dark" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-warning" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Saturday
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        11am-6pm
+                        <span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">Delete</a> </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-dark" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-warning" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Sunday
+
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        11am-3pm
+                        <span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">Delete</a> </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-dark mx-auto py-3">
+        <div class=" text-white">
+            <div>
+                <h3 class="text-warning">Add a New Daily Availability</h3>
+            </div>
+            <div class="form-group pb-3">
+                <p> Select a Day: </p>
+                <select class="form-control">
+                    <!--There is probally aother way to enter these options outside html, will look at later -->
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Sunday</option>
+                </select>
+            </div>
+            <div class="form-group row pb-3">
+                <label for="inputID">Enter a time range: </label>
+                <input type="time" class="form-control col" id="inputID" placeholder="From...">
+                <input type="time" class="form-control col" id="inputID" placeholder="From...">
+            </div>
+
+
+        </div>
+        <button type="submit" class="btn btn-warning">Select</button>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

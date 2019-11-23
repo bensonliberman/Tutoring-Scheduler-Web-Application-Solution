@@ -1,0 +1,73 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+
+<div class="mx-auto" style="width: 1100px">
+    <div class="starter-template  text-center">
+        <p class="h1">System Report</p>
+
+    </div>
+    <p>Select a date range to generate a System Report.</p>
+</div>
+
+<!--The date range selector-->
+<div class="container-fluid bg-dark mx-auto py-3">
+    <div class=" text-white">
+        <div class="form-row w-70">
+            <div class="form-group col-md-6">
+                <label for="inputStartDate">Start Date:</label>
+                <input type="date" class="form-control" id="inputStartDate">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEndDate">Start Date:</label>
+                <input type="date" class="form-control" id="inputEndDate">
+            </div>
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-warning">Select</button>
+</div>
+
+<!--The report sections-->
+<div class="container-fluid mx-auto w-70 py-3">
+
+    <div class="card bg-light text-dark">
+        <div class="card-header">Tutor Resource Management</div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid mx-auto w-70 py-3">
+
+    <div class="card bg-light text-dark">
+        <div class="card-header text-bold">Appointment Information</div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mx-auto w-70 py-3">
+
+    <div class="card bg-light text-dark">
+        <div class="card-header text-bold">Site Information</div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
