@@ -6,7 +6,12 @@ It contains the definition of routes and views for the application.
 from flask import Flask, render_template
 import backend
 import calendar
+
+
 app = Flask(__name__)
+
+from views import *
+
 
 # WILL LINK THESE LATERS RIGHT NOW JUST FOR IMAGE REFERENCE FOR SDD and 
 #login and createaccount are commented out while I work on other stuff
@@ -21,7 +26,6 @@ def createAcctPage():
     return render_template('createAccount.html')
 
 
-'''
 @app.route('/')
 def homepage():
     pageType = backend.userClass
@@ -147,27 +151,7 @@ def manageFacilPage():
     
     return render_template('/manageFacil.html', pageType=pageType)
 
-
-
-
-
-
-
-
-
-
-   
-
-
-
-   
-
-   
-
-   
-
-
-
+'''
 
 if __name__ == '__main__':
     import os
