@@ -41,9 +41,6 @@
     <Content Include="templates\adminMmgt.html" />
     <Content Include="templates\blackoutAvail.html" />
     <Content Include="templates\calendar.html" />
-    <Content Include="templates\calendarViews\monthlyCalendarView.html" />
-    <Content Include="templates\calendarViews\weeklyCalendarView.html" />
-    <Content Include="templates\calendarViews\weeklyViewCalendarRows.html" />
     <Content Include="templates\createAccount.html" />
     <Content Include="templates\dailyAvail.html" />
     <Content Include="templates\homepageLayout.html" />
@@ -79,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="templates\" />
-    <Folder Include="templates\calendarViews\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
