@@ -1,0 +1,41 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+
+<div class="pb-5 bg-transparent"></div>
+
+
+<div class="mx-auto container bg-warning" style="width: 1100px">
+    <div class="starter-template  text-center">
+        <p class="h1">Tutor Location Assignment</p>
+        <p>Assign a location for your new tutor.</p>
+    </div>
+</div>
+<div class="pb-5 bg-transparent"></div>
+<div class="container row mx-auto">
+    <div class="card bg-light m-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">James Doe</h5>
+
+            <h6 class="card-subtitle mb-2 text-muted">Location Preference: Cook Libray</h6>
+
+
+        </div>
+    </div>
+    <div class="card bg-dark " style="width: 40rem;">
+        <div class="card-body">
+            <h5 class="card-title text-warning">Cook Library</h5>
+            <h6 class="card-subtitle mb-2 text-white">Address:</h6>
+            <h6 class="card-subtitle mb-2 text-white">Room Capacity</h6>
+            <h6 class="card-subtitle mb-2 text-white">Operation Schedule</h6>
+            
+            
+            <button class="btn btn-warning" type="submit">Assign</button>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

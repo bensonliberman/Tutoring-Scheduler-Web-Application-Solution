@@ -1,0 +1,91 @@
+﻿{% extends 'overallLayout.html' %}
+{% block body %}
+
+<div class="container-fluid mx-auto w-60">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-warning mb-3 ">
+                <div class="card-header">DISCOVER.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Tutor Application</h5>
+                    <p class="card-text">
+                        Discover more Tigers with a passion for educating their fellow students.
+                        View existing Tutoring Applications.
+                    </p>
+                    <a href="/TutoringApplications" class="btn btn-dark">Let's Go</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3 ">
+                <div class="card-header">CULTIVATE.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage Tutors</h5>
+                    <p class="card-text">
+                        Cultivate the roster of Tutoring Tigers by maintaining the standards
+                        of education at Towson Universiy. View and manage the current roster of tutors.
+                    </p>
+                    <a href="/ManageTutors" class="btn btn-warning">Let's Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3 ">
+                <div class="card-header">ANALYZE.</div>
+                <div class="card-body">
+                    <h5 class="card-title">System Reporting</h5>
+                    <p class="card-text">
+                        Analyze the progress of the Tutoring Tigers tutoring program in
+                        order to make informed decisions.
+                    </p>
+                    <a href="/SystemInfo" class="btn btn-warning">Let's Go</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card text-white bg-warning mb-3 ">
+                <div class="card-header">ORGANIZED.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage Tutoring Facilities</h5>
+                    <p class="card-text">
+                        Stay organized by staying up to date on your program's facilities.
+                        Manage tutoring facilities.
+                    </p>
+                    <a href="/ManageTutoringFacilities" class="btn btn-dark">Let's Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3 ">
+                <div class="card-header">EXPAND.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Admin Management</h5>
+                    <p class="card-text">
+                        Expand the team of dedicated Tutoring Tigers faculty members. Add new admins.
+                    </p>
+                    <a href="/AdminManagement" class="btn btn-warning">Let's Go</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card text-white bg-warning mb-3 ">
+                <div class="card-header">SECURITY.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Update Pasword</h5>
+                    <p class="card-text">
+                        Stay secure by frequently updating your password.
+                    </p>
+                    <a href="/UpdatePassword" class="btn btn-dark">Let's Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

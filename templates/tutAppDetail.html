@@ -1,0 +1,31 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+    <div class="mx-auto" style="width: 1100px">
+        <div class="starter-template  text-center">
+            <p class="h1">Tutor Applications</p>
+
+        </div>
+    </div>    
+    <div class="container-fluid mx-auto">
+        <div class="card bg-light mx-auto w-60">
+            <div class="card-body">
+                <h5 class="card-title">{{ applicantName }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">TU id: {{ applicantID }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Email: {{ applicantEmail }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Major: </h6>
+                <h6 class="card-subtitle mb-2 text-muted">Location Preference: Cook Libray</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Subject: </h6>
+                <h5 class="card-title">Recommendation Letter:</h5>
+                <p class="card-text">{{ applicantRecLetter }}</p>
+                <a class="btn btn-dark " href="/TutorLocationAssignment" role="button">Accept</a>
+                <button class="btn btn-dark" type="submit">Reject</button>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

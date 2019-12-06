@@ -1,0 +1,28 @@
+﻿<!-- HomepageLayout contains the layout for each of the three user types: Student, Tutor, Admin-->
+{% extends 'overallLayout.html' %}
+
+{% block body %}
+
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+
+
+{% if pageType == 'admin' %} <!-- This is specifically admin homepage-->
+{% include 'adminHomepage.html' %}
+{% endif %}
+
+<div class="pb-5 bg-transparent"></div>
+
+{% if pageType == 'student' or pageType == 'tutor' %}
+<div class="container mx-auto w-70 h-70">
+    <div class="jumbotron bg-dark">
+        <h1 class="display-4 text-center text-warning">Welcome Tiger!</h1>
+
+        <hr class="my-4 ">
+        <p class="text-white">TUtoring Tigers is where Tigers help Tigers learn</p>
+
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

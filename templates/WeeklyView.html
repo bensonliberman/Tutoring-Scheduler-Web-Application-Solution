@@ -1,0 +1,36 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+
+<div class="pb-5 bg-transparent"></div>
+
+{% if pageType == 'student' or pageType == 'tutor' %}
+<div class="container mx-auto w-70 h-70">
+    <div class="jumbotron bg-dark">
+        <h1 class="display-4 text-center text-warning">Welcome Tiger!</h1>
+
+        <hr class="my-4 ">
+        <p class="text-white">TUtoring Tigers is where Tigers help Tigers learn</p>
+
+    </div>
+</div>
+
+
+<div class="pb-5 bg-transparent"></div>
+
+<!--Calendar View Toggle-->
+<div class="container-fluid text-center text-bold bg-warning p-4">
+    <a class="btn btn-dark" href="/" role="button">Monthly View</a>
+    <a class="btn btn-dark" href="/WeeklyView" role="button">Weekly View</a>
+</div>
+
+<!-- weeklyView on Homepage-->
+    {% include 'calendarViews/weeklyCalendarView.html' %}
+
+
+{% endif %}
+
+{% endblock %}

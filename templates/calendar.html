@@ -1,0 +1,21 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+
+
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+<div class="mx-auto" style="width: 1100px">
+    <div class="starter-template  text-center">
+        <p class="h1">Monthly Calendar</p>
+
+    </div>
+</div>
+
+<div class="container-fluid text-center text-bold bg-dark p-4">
+    <a class="btn btn-warning" href="/MyCalendar" role="button">Monthly View</a>
+    <a class="btn btn-warning" href="/MyWeeklyCalendar" role="button">Weekly View</a>
+</div><span class="navbar-brand mb-0 h1"></span>
+
+ {% include 'calendarViews/monthlyCalendarView.html' %}
+{% endblock %}

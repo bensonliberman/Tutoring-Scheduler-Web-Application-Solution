@@ -1,0 +1,71 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+
+<!-- This is the Title of the page-->
+<main role="main" class="container ">
+    <div class="jumbotron bg-dark ">
+        <div class=" text-center display-3 font-weight-bold py-5"><h1 class=" display-2 text-warning"> Become A Tutor!</h1> </div>
+        <p class="lead text-white">
+            Excited to pass on what you know? You too can become a Tutoring Tiger! Just complete
+            the application below.
+        </p>
+    </div>
+</main>
+
+<div>
+    <div class="container-fluid w-50 h-100">
+        <form>
+            <div class="form-group">
+                <label for="inputID">Enter TU id: </label>
+                <input type="text" class="form-control" id="inputID">
+            </div>
+            <div class="form-group">
+                <label for="inputName">Enter your Full Name: </label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Enter your Email: </label>
+                <input type="email" class="form-control" id="inputEmail"> <!--Email tag and name repeated else not sure if ok-->
+            </div>
+
+
+        </form>
+
+
+        <div class="pb-3">
+            <p>Select an area of expertise from the list of subjects below.</p>
+            <select class="form-control">
+                <!--There is probally aother way to enter these options outside html, will look at later -->
+                <option>Math</option>
+                <option>English</option>
+                <option>Computer Science</option>
+                <option>Engineering</option>
+            </select>
+        </div>
+        <div class="pb-3">
+            <p>Select a location preference.</p>
+            <p><small>Finalized tutoring location will be assigned by an administrator.</small></p>
+            <select class="form-control">
+                <!--There is probally aother way to enter these options outside html, will look at later -->
+                <option>Cook Library</option>
+                <option>York Road</option>
+                
+            </select>
+        </div>
+        <form class="pb-3">
+            <div class="form-group">
+                <label for="inputRecLetters">Upload letter of Reccomendation.</label>
+                <input type="file" class="form-control-file" id="inputRecLetters">
+            </div>
+        </form>
+
+
+        <button type="submit" class="btn btn-warning">Submit</button>
+    </div>
+   
+</div>
+{% endblock %}

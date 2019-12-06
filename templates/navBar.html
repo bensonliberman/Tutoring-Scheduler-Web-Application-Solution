@@ -1,0 +1,86 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+<nav class="navbar navbar-expand-md navbar-light bg-warning text-dark fixed-top">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <!-- Section defines the unique links per user class-->
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+
+            {% if pageType == 'tutor' or pageType == 'student' %} <!-- Student and Tutor profile links-->
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/MyProfile">My Profile</a>
+            </li>
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/MyCalendar">My Calendar</a>
+            </li>
+
+            <!-- Section defines the unique links per user class
+    <li class="nav-item pr-5 bg-warning font-weight-bold">
+        <a class="nav-link" href="/MyCalendar">My Calendar</a>
+    </li>
+    -->
+            {% endif %}
+
+            {% if pageType == 'tutor' %} <!-- Tutor unique navBar links-->
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/MyTutoringAvailability">My Tutoring Availability</a>
+            </li>
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/MyWorkRecord">My Work Record</a>
+            </li>
+            {% endif %}
+
+            {% if pageTyep == 'admin' %} <!--Admin unique navBar links -->
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/TutoringApps">Tutoring Applications</a>
+
+            </li>
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/ManageTutors">Manange Tutors</a>
+            </li>
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/ManageTutoringFacilities">Manage Tutoring Facilities</a>
+            </li>
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/SystemInfo">System Info</a>
+            </li>
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/AdminMmgt">Admin Management</a>
+            </li>
+            {% endif %}
+
+            {% if pageType == 'student' %} <!-- Student unique navBar links-->
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/FindATutor">Find A Tutor</a>
+            </li>
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/BecomeATutor">Become A Tutor!</a>
+            </li>
+            {% endif %}
+
+            {% if pageType == 'tutor' or pageType == 'student' %}
+            <li class="nav-item pr-5 bg-warning font-weight-bold">
+                <a class="nav-link" href="/UpdatePassword">Update Password</a>
+            </li>
+            {% endif %}
+
+
+        </ul>
+        {% if pageType == 'admin' %}
+        <a class ="navbar-brand text-right text-bold" href="#"><h1>ADMINISTRATOR</h1></a>
+        {% endif %}
+    </div>
+</nav>
+<div class="py-5 bg-transparent"></div>
+
+
+{% endblock %}

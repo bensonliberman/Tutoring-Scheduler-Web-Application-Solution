@@ -1,0 +1,138 @@
+﻿
+{% block body %}
+<div class="container-fluid text-center text-bold bg-dark p-4">
+    <h1 class=" text-center text-bold text-white">{{ calMonth }}</h1>
+    <!--Must Work on scrolling months option-->
+</div>
+<div class="col  mx-auto">
+    <table class="table table-bordered text-white">
+        <thead class=" bg-dark text-center">
+            <!--Calender Day Headings-->
+            <tr>
+                <th style="width: 300px; overflow:auto;"></th>
+                <th style="width: 300px; overflow:auto;">Sunday</th>
+                <th style="width: 300px; overflow:auto;">Monday</th>
+                <th style="width: 300px; overflow:auto;">Tuesday</th>
+                <th style="width: 300px; overflow:auto;">Wednesday</th>
+                <th style="width: 300px; overflow:auto;">Thursday</th>
+                <th style="width: 300px; overflow:auto;">Friday</th>
+                <th style="width: 300px; overflow:auto;">Saturday</th>
+            </tr>
+        </thead>
+        <!--Calender Days Cells-->
+        <tbody class="bg-light">
+            <tr>
+
+                <th class="text-center px-auto py-auto bg-warning text-dark" scope="row">8:00am-9:00am</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center px-auto py-auto bg-warning text-dark" scope="row">9:00am-10:00am</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">10:00am-11:00am</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">11:00am-12:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">12:00pm-1:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">1:00pm-2:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">2:00pm-3:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">3:00pm-4:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">4:00pm-5:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">5:00pm-6:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">6:00pm-7:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">7:00pm-8:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+            <tr>
+
+                <th class="text-center bg-warning text-dark px-auto py-auto" scope="row">8:00pm-9:00pm</th>
+
+                {% include 'calendarViews/weeklyViewCalendarRows.html' %}
+
+
+            </tr>
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</div>
+{% endblock %}

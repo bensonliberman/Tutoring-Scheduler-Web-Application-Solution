@@ -1,0 +1,97 @@
+﻿{% extends 'overallLayout.html' %}
+
+{% block body %}
+
+<!-- This is the navigation bar at the top of the page-->
+{% include 'navBar.html' %}
+
+
+
+<div class="mx-auto" style="width: 1100px">
+    <div class="starter-template">
+        <p class="h1 text-center">Manage Tutoring Facilities</p>
+        <div class="container-fluid mb-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Cook Library</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Address:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Room #:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Room Capacity:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Open from:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Till: </h6>
+                            <a href="#" class="card-link text-warning">Edit Info</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Cook Library</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Address:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Room #:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Room Capacity:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Open from:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Till: </h6>
+                            <a href="#" class="card-link text-warning">Edit Info</a>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Cook Library</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Address:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Room #:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Room Capacity:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Open from:</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Till: </h6>
+                            <a href="#" class="card-link text-warning">Edit Info</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid w-50 mx-auto h-100 bg-warning text-dark">
+        <p class="h3">Add a new tutoring facility</p>
+        <form>
+            <div class="form-group">
+                <label for="inputID">Enter facility name: </label>
+                <input type="text" class="form-control" id="inputID">
+            </div>
+            <div class="form-group">
+                <label for="inputName">Enter facility address: </label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Enter facility room number: </label>
+                <input type="number" class="form-control" id="inputEmail"> <!--Email tag and name repeated else not sure if ok-->
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Enter room capacity: </label>
+                <input type="number" class="form-control" id="inputEmail"> <!--Email tag and name repeated else not sure if ok-->
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Enter room tutoring hosting start time: </label>
+                <input type="time" class="form-control" id="inputEmail"> <!--Email tag and name repeated else not sure if ok-->
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Enter room tutoring hosting end time: </label>
+                <input type="time" class="form-control" id="inputEmail"> <!--Email tag and name repeated else not sure if ok-->
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+</div>
+{% endblock %}
