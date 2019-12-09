@@ -13,15 +13,10 @@
 </div>
 <div class="container-fluid w-50 h-100"> <!--Need to add functionality to buttons-->
     <ul class="list-group">
-        <li class="list-group-item">James Doe  <a class="btn btn-dark float-right" href="/ApplicationDetail" role="button">View</a></li>
-        <li class="list-group-item">Tony Star<span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">View</a> </span></li>
-        <li class="list-group-item">Marie Ann<span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">View</a> </span></li>
-        <li class="list-group-item">Justin Loop<span class=" float-right"><a class="btn btn-dark" href="/ApplicationDetail"role="button">View</a> </span></li>
-        <li class="list-group-item">Wickerby Adams <span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">View</a> </span></li>
-    </ul>
-
-
+            {% for option in options %}
+            <li class="list-group-item">{{ option[0] }} {{ option[1] }}<span class=" float-right"><a class="btn btn-dark" href="/ApplicationDetail/{{ option[2] }}" role="button">View</a></span></li>
+            {% endfor %}
+    </ul></form>
 </div>
-
 
 {% endblock %}

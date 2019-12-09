@@ -15,16 +15,16 @@
 <div class="container-fluid w-25 h-100">
     <!--Need to add functionality to buttons-->
     <ul class="list-group pb-4">
-        <li class="list-group-item">02/14/1194  <a class="btn btn-dark float-right" href="/ApplicationDetail" role="button">Delete</a></li>
-        <li class="list-group-item">06/2019/2019<span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">Delete</a> </span></li>
-        <li class="list-group-item">12/20/2020<span class=" float-right"> <a class="btn btn-dark" href="/ApplicationDetail" role="button">Delete</a> </span></li>
+        {% for option in options %}
+        <li class="list-group-item">{{ option[0] }}  <a class="btn btn-dark float-right" href="/ApplicationDetail" role="button">Delete</a></li>
+        {% endfor %}
     </ul>
-    <form >
+    <form method="POST">
         <label for="inputID">Enter a new Blackout Date: </label>
-        <input type="date" class="form-control col" id="inputID">
-    </form>
-    <button type="submit" class="btn btn-warning">submit</button>
+        <input name="date" type="date" class="form-control col" id="inputID">
 
+    <button type="submit" class="btn btn-warning">submit</button>
+ </form>
 </div>
 
 

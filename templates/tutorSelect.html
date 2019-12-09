@@ -17,14 +17,14 @@
 
 <div>
     <div class="container w-50  bg-dark tex-white p-3">
-        <form>
+        <form method="POST">
             <div class="form-group text-white">
                 <label for="inputTutName">Enter Tutor Name:</label>
                 <input type="text" class="form-control" id="inputTutName">
             </div>
             <div class="form-group text-white">
                 <label for="exampleFormControlSelect1">Chose a Subject</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select name="subject" class="form-control" id="exampleFormControlSelect1">
                     <option>Math</option>
                     <option>English</option>
                     <option>Computer Science</option>
@@ -45,13 +45,13 @@
     <!--Need to add functionality to buttons-->
     <ul class="list-group">
         <li class="list-group-item container bg-light">
-            <h4 class="card-title">James Doe</h4>
+            <h4 class="card-title">{{ name }}</h4>
 
-            <div >
+            <div>
                 <p>
-                    <h6 class="card-subtitle mb-2 text-muted">TU id: 016831468</h6>
-                    <h6 class="card-subtitle mb-2 text-muted">Email:student@student.tu.com</h6>
-                    <h6 class="card-subtitle mb-2 text-muted">Subject: Math</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">TU id: {{ tuID }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Email: {{ email }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Subject: {{ subject }}</h6>
                     <h5 class="card-subtitle mb-2 text-muted">Clubs:</h5>
                     Mathletes <br />
                     Pizza Club

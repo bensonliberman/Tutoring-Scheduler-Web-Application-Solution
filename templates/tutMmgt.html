@@ -20,11 +20,12 @@
 
     <div class="container-fluid mx-auto w-50 m-4">
         <div class="accordion" id="accordionExample">
+
             <div class="card">
                 <div class="card-header bg-dark" id="headingOne">
                     <h2 class="mb-0">
                         <button class="btn btn-link text-warning" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          James Doe
+                          {{ name }}
                         </button>
                     </h2>
                 </div>
@@ -32,7 +33,7 @@
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                         Info about tutor
-                 
+                        {{ email }}
                     </div>
                     <div>
                         <span  class=" float-right"> <button class="btn btn-warning m-3" type="submit">Delete</button> </span>

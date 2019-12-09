@@ -18,27 +18,27 @@
 
 <div>
     <div class="container-fluid w-50 h-100">
-        <form>
+        <form method="POST">
             <div class="form-group">
                 <label for="inputID">Enter TU id: </label>
-                <input type="text" class="form-control" id="inputID">
+                <input name="tuID" type="text" class="form-control" id="inputID">
             </div>
             <div class="form-group">
                 <label for="inputName">Enter your Full Name: </label>
-                <input type="text" class="form-control" id="inputName">
+                <input name="name" type="text" class="form-control" id="inputName">
             </div>
             <div class="form-group">
                 <label for="inputEmail">Enter your Email: </label>
-                <input type="email" class="form-control" id="inputEmail"> <!--Email tag and name repeated else not sure if ok-->
+                <input name="email" type="email" class="form-control" id="inputEmail"> <!--Email tag and name repeated else not sure if ok-->
             </div>
 
 
-        </form>
+
 
 
         <div class="pb-3">
             <p>Select an area of expertise from the list of subjects below.</p>
-            <select class="form-control">
+            <select name="subject" class="form-control">
                 <!--There is probally aother way to enter these options outside html, will look at later -->
                 <option>Math</option>
                 <option>English</option>
@@ -49,22 +49,20 @@
         <div class="pb-3">
             <p>Select a location preference.</p>
             <p><small>Finalized tutoring location will be assigned by an administrator.</small></p>
-            <select class="form-control">
+            <select name="location" class="form-control">
                 <!--There is probally aother way to enter these options outside html, will look at later -->
                 <option>Cook Library</option>
                 <option>York Road</option>
                 
             </select>
         </div>
-        <form class="pb-3">
             <div class="form-group">
                 <label for="inputRecLetters">Upload letter of Reccomendation.</label>
                 <input type="file" class="form-control-file" id="inputRecLetters">
             </div>
-        </form>
-
 
         <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
     </div>
    
 </div>
